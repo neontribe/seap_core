@@ -604,10 +604,7 @@ nav li + li::before {
 }
 
 #data-box {
-	border: 5px solid #3389c1;
-	padding: 20px;
-	padding: 1.5rem;
-	border-radius: 0.1875em;
+	margin: 0;
 }
 
 #categories-content {

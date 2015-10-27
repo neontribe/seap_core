@@ -603,6 +603,13 @@ nav li + li::before {
 	border-radius: 0.1875em;
 }
 
+#data-box {
+	border: 5px solid #3389c1;
+	padding: 20px;
+	padding: 1.5rem;
+	border-radius: 0.1875em;
+}
+
 #categories-content {
 	margin: 0 10%;
 }

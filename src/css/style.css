@@ -865,7 +865,7 @@ img + h1 {
   margin-bottom: 0.25em;
 }
 
-#about-PIP .print-box p
+#about-PIP .print-box p,
 #about-esa .print-box p {
   max-width: 55%;
   float: left;

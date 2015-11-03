@@ -874,7 +874,7 @@ img + h1 {
 
 #about-esa .print-box button, #about-PIP .print-box button {
   /*float: left;*/
-  margin: 0.5em 0.5em 0.5em 0;
+  margin: 0 1em 0.4em 0;
 }
 
 #video-transcription p {

@@ -861,7 +861,7 @@ img + h1 {
 
 #about-PIP .print-box .button-shaped,
 #about-esa .print-box .button-shaped {
-  width: 95%;
+  width: 97%;
   margin-bottom: 0.25em;
   text-align: center;
 }
@@ -874,7 +874,7 @@ img + h1 {
 
 #about-esa .print-box button, #about-PIP .print-box button {
   /*float: left;*/
-  margin: 0 1em 0.4em 0;
+  margin: 0 0.5em 0.4em 0;
 }
 
 #video-transcription p {

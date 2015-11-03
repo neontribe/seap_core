@@ -847,6 +847,10 @@ img + h1 {
   margin: 0;
 }
 
+.print-box .button-shaped {
+  width: 96%;
+}
+
 .paper {
   background: #fff;
   padding: 1.5em;
@@ -856,17 +860,14 @@ img + h1 {
 .paper h3 + p {
   margin-top: 0;
 }
+
 /* about-esa about-PIP
 ---------------------------------------------*/
 
+/* Video transcription expandie */
 #about-esa .print-box button,
 #about-PIP .print-box button {
   margin: 0 0.5em 0.4em 0;
-}
-
-#about-esa .print-box .button-shaped,
-#about-PIP .print-box .button-shaped {
-  width: 96%;
 }
 
 #video-transcription p {

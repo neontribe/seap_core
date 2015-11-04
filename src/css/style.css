@@ -302,7 +302,6 @@ button.nav-link:active {
 
 [aria-label$="menu"] li {
   display: inline-block;
-  margin: 0.25em;
 }
 
 nav {

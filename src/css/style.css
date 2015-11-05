@@ -1050,6 +1050,33 @@ footer a {
   }
 }
 
+/*Portal--------------------
+---------------------------*/
+.wrapper {
+  max-width: 850px;
+  margin: auto;
+}
+
+.wrapper button {
+  width: 100%;
+}
+
+.c-app-intro {
+  margin-top: 120px;
+  margin-top: 6rem;
+}
+.esa-section {
+  float: left;
+  text-align: center;
+  width: 45%;
+}
+
+.pip-section {
+  float: right;
+  text-align: center;
+  width: 45%;
+}
+
 @media (min-width: 600px) {
   [aria-label="menu options"] ul {
     display: flex;

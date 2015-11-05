@@ -1087,6 +1087,44 @@ footer a {
 
 }
 
+/* PROFILE BUTTONS ------------------------------------------------- */
+
+.social-profile-buttons,
+.social-profile-buttons div {
+  display: inline-block;
+}
+
+.social-profile-buttons a {
+  height: 32px;
+  width: 32px;
+  display: block;
+  border: none;
+}
+
+.social-profile-buttons ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.social-profile-buttons a.facebook {
+  background: url('images/neontabs_social_sprite-32x32.png') #4d7dc1 2px center no-repeat;
+  background-position: 0 -32px;
+  border-color: #294c89;
+}
+
+.social-profile-buttons a.linkedin {
+  background: url('images/neontabs_social_sprite-32x32.png') #0177b5 2px center no-repeat;
+  background-position: 0 -128px;
+  border-color: #0075b6;
+}
+
+.social-profile-buttons a.twitter {
+  background: url('images/neontabs_social_sprite-32x32.png') #4099FF 2px center no-repeat;
+  background-position: 0 -226px;
+  border-color: #204c7f;
+}
+
+
 @media (min-width: 600px) {
   [aria-label="menu options"] ul {
     display: flex;

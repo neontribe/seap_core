@@ -1053,6 +1053,11 @@ footer a {
 /*Portal--------------------
 ---------------------------*/
 
+.c-app h1 {
+  margin-top: 120px;
+  margin-top: 6rem;
+}
+
 .c-app .wrapper {
   max-width: 850px;
   margin: auto;
@@ -1068,8 +1073,6 @@ footer a {
 }
 
 .c-app .intro {
-  margin-top: 120px;
-  margin-top: 6rem;
   margin-bottom: 1.5em;
 }
 

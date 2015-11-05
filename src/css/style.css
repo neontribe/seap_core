@@ -1059,22 +1059,37 @@ footer a {
 
 .wrapper button {
   width: 100%;
+  margin: 0;
+}
+
+.wrapper button p {
+  text-align: center;
 }
 
 .c-app-intro {
   margin-top: 120px;
   margin-top: 6rem;
+  margin-bottom: 1.5em;
 }
 .esa-section {
   float: left;
   text-align: center;
   width: 45%;
+  margin-bottom: 1.5em;
+
 }
 
 .pip-section {
   float: right;
   text-align: center;
   width: 45%;
+  margin-bottom: 1.5em;
+
+}
+
+.social li {
+  display: inline-block;
+  margin: 0 auto;
 }
 
 @media (min-width: 600px) {

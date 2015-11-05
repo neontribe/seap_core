@@ -46,6 +46,7 @@ img {
 }
 
 body {
+  background: #dcf0fd;
   font-size: 20px;
   color: #003555;
   line-height: 1.5;
@@ -552,7 +553,6 @@ noscript {
   vertical-align: middle;
   text-align: center;
   display: none;
-  background: #dcf0fd;
   padding: 120px 30px;
   padding: 6rem 1.5rem;
 }
@@ -1052,39 +1052,38 @@ footer a {
 
 /*Portal--------------------
 ---------------------------*/
-.wrapper {
+
+.c-app .wrapper {
   max-width: 850px;
   margin: auto;
 }
 
-.wrapper button {
+.c-app .wrapper button {
   width: 100%;
   margin: 0;
 }
 
-.wrapper button p {
+.c-app .wrapper button p {
   text-align: center;
 }
 
-.c-app-intro {
+.c-app .intro {
   margin-top: 120px;
   margin-top: 6rem;
   margin-bottom: 1.5em;
 }
-.esa-section {
-  float: left;
+
+.c-app .esa-section, .c-app .pip-section {
   text-align: center;
   width: 45%;
   margin-bottom: 1.5em;
-
+}
+.c-app .esa-section {
+  float: left;
 }
 
-.pip-section {
+.c-app .pip-section {
   float: right;
-  text-align: center;
-  width: 45%;
-  margin-bottom: 1.5em;
-
 }
 
 /* PROFILE BUTTONS ------------------------------------------------- */
@@ -1092,6 +1091,7 @@ footer a {
 .social-profile-buttons,
 .social-profile-buttons div {
   display: inline-block;
+  float: right;
 }
 
 .social-profile-buttons a {
@@ -1107,19 +1107,19 @@ footer a {
 }
 
 .social-profile-buttons a.facebook {
-  background: url('images/neontabs_social_sprite-32x32.png') #4d7dc1 2px center no-repeat;
+  background: url('../images/neontabs_social_sprite-32x32.png') #4d7dc1 2px center no-repeat;
   background-position: 0 -32px;
   border-color: #294c89;
 }
 
 .social-profile-buttons a.linkedin {
-  background: url('images/neontabs_social_sprite-32x32.png') #0177b5 2px center no-repeat;
+  background: url('../images/neontabs_social_sprite-32x32.png') #0177b5 2px center no-repeat;
   background-position: 0 -128px;
   border-color: #0075b6;
 }
 
 .social-profile-buttons a.twitter {
-  background: url('images/neontabs_social_sprite-32x32.png') #4099FF 2px center no-repeat;
+  background: url('../images/neontabs_social_sprite-32x32.png') #4099FF 2px center no-repeat;
   background-position: 0 -226px;
   border-color: #204c7f;
 }

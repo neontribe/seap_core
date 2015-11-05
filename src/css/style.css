@@ -1087,11 +1087,6 @@ footer a {
 
 }
 
-.social li {
-  display: inline-block;
-  margin: 0 auto;
-}
-
 @media (min-width: 600px) {
   [aria-label="menu options"] ul {
     display: flex;

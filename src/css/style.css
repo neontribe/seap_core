@@ -995,60 +995,6 @@ footer a {
   animation: prompt 0.75s linear 1;
   border: 1px solid;
 }
-/* break points
----------------------------------------------*/
-
-@media (max-width: 800px) {
-  body {
-    font-size: 18px;
-  }
-  .category-list li {
-    min-width: 50% !important;
-    flex: 1 0 50% !important;
-  }
-  .box {
-    margin: 0 10%;
-  }
-}
-/*ipad 768px iphone6&6+ 736px */
-
-@media (max-width: 750px) {
-  body {
-    font-size: 17px;
-  }
-  [aria-label$="menu"] li {
-    display: inline-block;
-  }
-
-  [role="banner"] {
-    text-align: center;
-  }
-  .to-main-menu {
-    text-align: center;
-    float: none;
-    display: inline-block;
-  }
-  .box {
-    margin: 0 0.5em;
-    padding: 1em 0.5em 0.5em;
-  }
-  .question h2 {
-    font-size: 1.55em;
-  }
-  button,
-  .button-shaped,
-  [type="radio"] + span {
-    font-size: 0.9em;
-  }
-  footer p {
-    text-align: center;
-    padding-right: 0;
-  }
-  .category-list li {
-    min-width: 100% !important;
-    flex: 1 0 100% !important;
-  }
-}
 
 /*Portal--------------------
 ---------------------------*/
@@ -1060,7 +1006,8 @@ footer a {
 
 .c-app .wrapper {
   max-width: 850px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0 1.5em;
 }
 
 .c-app .wrapper button {
@@ -1070,6 +1017,10 @@ footer a {
 
 .c-app .wrapper button p {
   text-align: center;
+  display: block;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 0.75em;
 }
 
 .c-app .intro {
@@ -1078,7 +1029,7 @@ footer a {
 
 .c-app .esa-section, .c-app .pip-section {
   text-align: center;
-  width: 45%;
+  width: 46%;
   margin-bottom: 1.5em;
 }
 .c-app .esa-section {
@@ -1094,7 +1045,8 @@ footer a {
 .social-profile-buttons,
 .social-profile-buttons div {
   display: inline-block;
-  float: right;
+  float: left;
+  margin: 1em 0 0 1.5em;
 }
 
 .social-profile-buttons a {
@@ -1102,6 +1054,10 @@ footer a {
   width: 32px;
   display: block;
   border: none;
+}
+
+.social-profile-buttons ul {
+  margin: 0;
 }
 
 .social-profile-buttons ul li {
@@ -1127,6 +1083,78 @@ footer a {
   border-color: #204c7f;
 }
 
+/* break points
+---------------------------------------------*/
+
+@media (max-width: 800px) {
+  body {
+    font-size: 18px;
+  }
+  .category-list li {
+    min-width: 50% !important;
+    flex: 1 0 50% !important;
+  }
+  .box {
+    margin: 0 10%;
+  }
+}
+/*ipad 768px iphone6&6+ 736px */
+
+@media (max-width: 750px) {
+  body {
+    font-size: 17px;
+  }
+
+  [aria-label$="menu"] li {
+    display: inline-block;
+  }
+
+  [role="banner"] {
+    text-align: center;
+  }
+
+  .to-main-menu {
+    text-align: center;
+    float: none;
+    display: inline-block;
+  }
+
+  .c-app .to-main-menu {
+    text-align: center;
+    float: none;
+    display: inline-block;
+    font-size: 18px;
+  }
+
+  .box {
+    margin: 0 0.5em;
+    padding: 1em 0.5em 0.5em;
+  }
+  .question h2 {
+    font-size: 1.55em;
+  }
+  button,
+  .button-shaped,
+  [type="radio"] + span {
+    font-size: 0.9em;
+  }
+  footer p {
+    padding-right: 0;
+  }
+  .category-list li {
+    min-width: 100% !important;
+    flex: 1 0 100% !important;
+  }
+
+  .c-app .esa-section, .c-app .pip-section {
+    text-align: center;
+    width: 100%;
+  }
+
+  .social-profile-buttons {
+    margin: 2em 0 0 1.5em;
+  }
+}
 
 @media (min-width: 600px) {
   [aria-label="menu options"] ul {
@@ -1195,6 +1223,17 @@ footer a {
     padding: 120px 0px;
     padding: 6rem 0rem;
   }
+
+  .c-app h1 {
+    padding-top: 80px;
+    padding-top: 4rem;
+  }
+
+  .social-profile-buttons {
+    margin: 2em 0 0 1.5em;
+    width: 100%;
+  }
+
   footer p {
     font-size: 12px;
   }

@@ -1227,12 +1227,13 @@ header span {
   .to-main-menu {
     display: block;
   }
-  nav ul {
-    margin: 0;
+
+  .c-app .to-main-menu {
+    float:none;
   }
 
-  .c-app nav ul {
-    margin-right: 1.5em;
+  nav ul {
+    margin: 0;
   }
 
   .label-input {
@@ -1251,6 +1252,8 @@ header span {
 
   .c-app h1 {
     padding-top: 0;
+    margin-top: 60px;
+    margin-top: 3rem;
   }
 
   .social-profile-buttons {

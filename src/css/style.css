@@ -1215,6 +1215,7 @@ header span {
   [aria-label$="menu"] li {
     display: block;
   }
+
   [role="banner"] {
     height: auto;
     line-height: 1.5em;
@@ -1222,12 +1223,18 @@ header span {
     width: 100%;
     padding: 0.5em;
   }
+
   .to-main-menu {
     display: block;
   }
   nav ul {
     margin: 0;
   }
+
+  .c-app nav ul {
+    margin-right: 1.5em;
+  }
+
   .label-input {
     width: 100%;
   }
@@ -1243,8 +1250,7 @@ header span {
   }
 
   .c-app h1 {
-    padding-top: 80px;
-    padding-top: 4rem;
+    padding-top: 0;
   }
 
   .social-profile-buttons {

@@ -1040,6 +1040,10 @@ footer a {
   float: right;
 }
 
+.c-app footer {
+  height: auto;
+}
+
 /* PROFILE BUTTONS ------------------------------------------------- */
 
 .social-profile-buttons,

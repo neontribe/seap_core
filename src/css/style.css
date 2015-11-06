@@ -685,6 +685,21 @@ img + h1 {
   display: inline-block;
   margin-top: 0.75em;
 }
+
+header .logo {
+  float: left;
+}
+
+header img {
+  float: left;
+  margin-right: 0.5em;
+}
+
+header span {
+  display: block;
+  float: right;
+  margin-top: 0;
+}
 /* main menu
 ---------------------------------------------*/
 
@@ -1045,21 +1060,6 @@ footer a {
   height: auto;
 }
 
-header .logo {
-  float: left;
-}
-
-header img {
-  float: left;
-  margin-right: 0.5em;
-}
-
-header span {
-  display: block;
-  float: right;
-  margin-top: 0;
-}
-
 /* PROFILE BUTTONS ------------------------------------------------- */
 
 .social-profile-buttons,
@@ -1229,11 +1229,15 @@ header span {
   }
 
   .to-main-menu {
-    display: block;
+    float:none;
   }
 
-  .c-app .to-main-menu {
-    float:none;
+  header .logo {
+    width: 100%;
+  }
+
+  header span {
+    float: none;
   }
 
   nav ul {

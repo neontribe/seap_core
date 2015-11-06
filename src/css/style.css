@@ -58,6 +58,7 @@ body * + * {
   margin-top: 1.5rem;
 }
 
+header,
 li,
 option,
 dt,
@@ -1044,6 +1045,21 @@ footer a {
   height: auto;
 }
 
+header .logo {
+  float: left;
+}
+
+header img {
+  float: left;
+  margin-right: 0.5em;
+}
+
+header span {
+  display: block;
+  float: right;
+  margin-top: 0;
+}
+
 /* PROFILE BUTTONS ------------------------------------------------- */
 
 .social-profile-buttons,
@@ -1119,7 +1135,6 @@ footer a {
 
   .to-main-menu {
     text-align: center;
-    float: none;
     display: inline-block;
     font-size: 20px;
   }
@@ -1152,6 +1167,12 @@ footer a {
   .social-profile-buttons {
     margin: 2em 0 0 1.5em;
   }
+
+  header img {
+    display: none;
+  }
+
+
 }
 
 @media (min-width: 600px) {

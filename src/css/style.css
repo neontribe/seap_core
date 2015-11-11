@@ -902,6 +902,12 @@ header span {
   clear: both;
 }
 
+details {
+  font-weight:bold;
+  text-align: left;
+  border: 0;
+}
+
 /* expandies
 ---------------------------------------------*/
 

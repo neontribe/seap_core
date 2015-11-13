@@ -782,16 +782,16 @@ header span {
 
 @keyframes wobble {
   0% {
-    transform: rotate(0.5deg);
+    transform: rotate(0deg);
   }
   25% {
-    transform: rotate(-0.5deg);
+    transform: rotate(0deg);
   }
   50% {
-    transform: rotate(0.5deg);
+    transform: rotate(0deg);
   }
   75% {
-    transform: rotate(-0.5deg);
+    transform: rotate(0deg);
   }
   100% {
     transform: rotate(0deg);
@@ -900,6 +900,19 @@ header span {
 
 #video-transcription p {
   clear: both;
+  margin: 0;
+}
+
+#video-transcription details :nth-child(2) {
+  margin-top: 0.5em;
+}
+
+details {
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 2px solid #79bde9;
+  padding-bottom: 0.5em;
+  margin: 0.5em 0 1.5em 0;
 }
 
 /* expandies
@@ -1024,6 +1037,7 @@ footer a {
 .c-app h1 {
   margin-top: 120px;
   margin-top: 6rem;
+  font-size: 2.8em;
 }
 
 .c-app .wrapper {
@@ -1046,7 +1060,7 @@ footer a {
 }
 
 .c-app .intro {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
 .c-app .esa-section, .c-app .pip-section {
@@ -1064,6 +1078,10 @@ footer a {
 
 .c-app footer {
   height: auto;
+}
+
+.c-app .outro {
+  clear:both;
 }
 
 /* PROFILE BUTTONS ------------------------------------------------- */

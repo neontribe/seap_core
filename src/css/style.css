@@ -1088,6 +1088,14 @@ footer a {
   text-align: center;
 }
 
+.privacy-link p {
+  line-height: 1.5em;
+}
+
+.privacy-link {
+  margin: 0;
+}
+
 /* PROFILE BUTTONS ------------------------------------------------- */
 
 .social-profile-buttons,

@@ -1212,6 +1212,9 @@ footer a {
     display: inline;
   }
 
+  .c-app .wrapper {
+    padding-bottom: 8em;
+  }
 }
 
 @media (min-width: 600px) {
@@ -1307,7 +1310,7 @@ footer a {
   }
 
   .c-app .wrapper {
-    padding-bottom: 8em;
+    padding-bottom: 9em;
   }
 
   .social-profile-buttons {

@@ -77,7 +77,7 @@ p + p {
 }
 
 .hide-visually {
-  text-align: -99999px;
+  text-indent: -99999px;
 }
 
 #stats * + h3 {

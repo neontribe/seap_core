@@ -71,11 +71,14 @@ $('body').on('click', 'button', function(e) {
 // Event on visit to stats page
 $('#stats-content').on('stats-analytic-event', function(e) {
 
-  var percentSkipped = getPercentSeenSkipped();
+  // Percentage of questions seen and skipped.
+  var percentSkipped = 0;
+  if (numSeen > 0) { percentSkipped = (numSkipped/numSeen).toFixed(2); }
   ga('send', 'event', '#stats', 'question-progress', 'percent skipped', percentSkipped);
 
   // Percentage of all questions answered (including ones not yet seen).
   var percentAnswered = getPercentAnswered();
+
   ga('send', 'event', '#stats', 'question-progress', 'percent answered', percentAnswered);
 
 });

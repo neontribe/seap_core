@@ -61,13 +61,19 @@ $('body').on('click', 'a', function(e) {
 $('body').on('click', 'button', function(e) {
   var page = '';
       linkText = $(this).text();
+      value = null;
   // Attempt to get the page we came from in the hashHistory.
   // If that fails, call it unknown.
   page = _.last(window.hashHistory);
   if (!page) {
     page = 'unknown';
   }
-  ga('send', 'event', page, 'button-click', linkText, null);
+  // @todo make the value 1 if submit answer, 0 if skipped
+  // If we are submitting/ skipping a question set value 1 or 0
+  if (linkText === 'Ask me another') {
+    //console.log(db.get(siteAss));
+  }
+  ga('send', 'event', page, 'button-click', linkText, value);
 });
 
 // Event on open/ close
@@ -108,4 +114,4 @@ $('#seen-all').on('click', '[data-action="stats"]', function(e) {
 // More Prepared - Event on any button click on your assessment button
 $('#seen-all-even-skipped').on('click', '[data-action="stats"]', function(e) {
   ga('send', 'event', '#seen-all-even-skipped', 'more-prepared:stats-button-click', 'percent answered', 100);
-}
+});

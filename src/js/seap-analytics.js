@@ -16,7 +16,8 @@ function getPercentSeenSkipped() {
       numSkipped = db.get(siteAss).skippedQuestions.length;
 
   // Percentage of questions seen and skipped.
-  var percentSkipped = (numSkipped/numSeen).toFixed(2);
+  var percentSkipped = 0;
+  if (numSeen > 0) { percentSkipped = (numSkipped/numSeen).toFixed(2); }
 
   return percentSkipped;
 }
@@ -31,7 +32,8 @@ function getPercentAnswered() {
     numAnswered += _.size(value);
   });
 
-  var percentAnswered = (numAnswered/numAll).toFixed(2);
+  var percentAnswered = 0;
+  if (numAll > 0) { percentAnswered = (numAnswered/numAll).toFixed(2); }
   return percentAnswered;
 }
 
@@ -72,25 +74,23 @@ $('body').on('click', 'button', function(e) {
 $('#stats-content').on('stats-analytic-event', function(e) {
 
   // Percentage of questions seen and skipped.
-  var percentSkipped = 0;
-  if (numSeen > 0) { percentSkipped = (numSkipped/numSeen).toFixed(2); }
-  ga('send', 'event', '#stats', 'question-progress', 'percent skipped', percentSkipped);
+  var perSkip = getPercentSeenSkipped();
+  ga('send', 'event', '#stats', 'question-progress', 'percent skipped', perSkip);
 
   // Percentage of all questions answered (including ones not yet seen).
-  var percentAnswered = getPercentAnswered();
-
-  ga('send', 'event', '#stats', 'question-progress', 'percent answered', percentAnswered);
+  var perAns = getPercentAnswered();
+  ga('send', 'event', '#stats', 'question-progress', 'percent answered', perAns);
 
 });
 
 //More Prepared - Event on print with answer %
 $('#stats').on('click', '#printing-box button', function() {
-  var percentAnswered = getPercentAnswered();
-  ga('send', 'event', '#stats', 'more-prepared:print-button-click', 'percent answered', percentAnswered);
+  var perAns = getPercentAnswered();
+  ga('send', 'event', '#stats', 'more-prepared:print-button-click', 'percent answered', perAns);
 });
 
 //More Prepared - Event on seen all and click stats
 $('#seen-all').on('click', '[data-action="stats"]', function() {
-  var percentAnswered = getPercentAnswered();
-  ga('send', 'event', '#seen-all', 'more-prepared:stats-button-click', 'percent answered', percentAnswered);
+  var perAns = getPercentAnswered();
+  ga('send', 'event', '#seen-all', 'more-prepared:stats-button-click', 'percent answered', perAns);
 });

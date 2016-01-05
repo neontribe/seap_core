@@ -981,11 +981,11 @@ footer a {
   border: 0;
 }
 
-.privacy .larger {
+footer .privacy .larger {
   text-align: center;
 }
 
-.privacy-link {
+footer .privacy-link {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -993,11 +993,11 @@ footer a {
   line-height: 1.5em;
 }
 
-#privacy {
+footer #privacy {
   margin: 0 1em 0 1em;
 }
 
-#feedback {
+footer #feedback {
   margin-left: 1em;
 }
 

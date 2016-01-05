@@ -1142,13 +1142,14 @@ footer a {
 .privacy-link {
   margin: 0;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   line-height: 1.5em;
 }
 
 #privacy {
   margin-right: 1em;
+  margin-left: 1em;
   margin-top: 0;
 }
 

@@ -1044,11 +1044,6 @@ footer a {
     background-position: -175px -168px;
 }
 
-.feedback-survey {
-
-}
-
-
 /* feedback
 ---------------------------------------------*/
 
@@ -1148,9 +1143,7 @@ footer a {
 }
 
 #privacy {
-  margin-right: 1em;
-  margin-left: 1em;
-  margin-top: 0;
+  margin: 0 1em 0 1em;
 }
 
 #feedback {
@@ -1372,6 +1365,10 @@ footer a {
 
   .c-app .wrapper {
     padding-bottom: 9em;
+  }
+
+  .c-app .privacy-link {
+    align-self: flex-end;
   }
 
   .social-profile-buttons {

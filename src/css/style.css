@@ -1044,6 +1044,10 @@ footer a {
     background-position: -175px -168px;
 }
 
+.feedback-survey {
+
+}
+
 
 /* feedback
 ---------------------------------------------*/
@@ -1131,12 +1135,25 @@ footer a {
   text-align: center;
 }
 
-.privacy-link p {
+/*.privacy-link p {
   line-height: 1.5em;
-}
+}*/
 
 .privacy-link {
   margin: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  line-height: 1.5em;
+}
+
+#privacy {
+  margin-right: 1em;
+  margin-top: 0;
+}
+
+#feedback {
+  margin-left: 1em;
 }
 
 /* PROFILE BUTTONS ------------------------------------------------- */

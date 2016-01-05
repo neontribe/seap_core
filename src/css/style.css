@@ -981,6 +981,26 @@ footer a {
   border: 0;
 }
 
+.privacy .larger {
+  text-align: center;
+}
+
+.privacy-link {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  line-height: 1.5em;
+}
+
+#privacy {
+  margin: 0 1em 0 1em;
+}
+
+#feedback {
+  margin-left: 1em;
+}
+
 /*footer sprites*/
 .sprite {
   background-image: url(../images/spritesheet.png);
@@ -1124,30 +1144,6 @@ footer a {
 
 .c-app .outro {
   clear:both;
-}
-
-.privacy .larger {
-  text-align: center;
-}
-
-/*.privacy-link p {
-  line-height: 1.5em;
-}*/
-
-.privacy-link {
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  line-height: 1.5em;
-}
-
-#privacy {
-  margin: 0 1em 0 1em;
-}
-
-#feedback {
-  margin-left: 1em;
 }
 
 /* PROFILE BUTTONS ------------------------------------------------- */

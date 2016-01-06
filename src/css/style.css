@@ -970,6 +970,7 @@ footer {
   left: 0;
   right: 0;
   line-height: 3em;
+  height: auto;
 }
 
 footer p {
@@ -1385,6 +1386,10 @@ footer #feedback {
   .social-profile-buttons {
     margin: 2em 0 0 1.5em;
     width: 100%;
+  }
+
+  footer {
+    height: 4em;
   }
 
   footer p {

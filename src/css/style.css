@@ -1150,6 +1150,13 @@ footer #feedback {
   height: auto;
 }
 
+.c-app footer .privacy-link {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
 .c-app .outro {
   clear:both;
 }

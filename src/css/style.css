@@ -243,17 +243,16 @@ button:only-of-type {
 }
 
 button[disabled] {
-  opacity: 0.7;
+  background: #0a8f60;
+  color: #6fe9bf;
 }
 
-button[disabled]::after {
-  content: ' (done)';
-  font-size: 0.8em;
+button[disabled]::before {
+  content: '\0020\2713';
+  padding-right: 0.25em;
+  font-weight: bold;
 }
 
-button[disabled]:active {
-  background: #E25C43;
-}
 /* links
 ---------------------------------------------*/
 

@@ -760,7 +760,6 @@ header span {
 .ticks li + li {
   margin-top: 0.25em;
   padding-top: 0.25em;
-  border-top: 1px solid #79bde9;
 }
 
 .ticks li::before {

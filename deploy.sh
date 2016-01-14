@@ -27,6 +27,8 @@ git pull origin gh-pages
 git push origin gh-pages
 fi
 
+#STOPPED HERE _ NEED TO IMPLEMENT RELEASE TO LIVE
+
 #if this is a tagged release, deploy to LIVE
 if [ "$TRAVIS_TAG" ]; then
     echo -e "Release tag:"

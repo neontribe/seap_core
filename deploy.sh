@@ -17,6 +17,10 @@ cp -r src ../
 git checkout gh-pages
 cp -r ../src/* .
 rm -r ../src
+rm -r node_modules
+rm .gitignore
+rm -r js
+rm -r helpers
 git add .
 git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to Github Pages"
 git pull origin gh-pages

@@ -743,21 +743,18 @@ header span {
 }
 
 .learn-about {
-  border: 5px solid #3389c1;
-  border-radius: 0.1875em;
   margin-right: 10px;
   text-align: center;
   width: 50%;
 }
 
-.learn-about li {
+.learn-about li,
+.quiz-time li {
   margin: 10px;
   text-align: left;
 }
 
 .quiz-time {
-  border: 5px solid #3389c1;
-  border-radius: 0.1875em;
   margin-left: 10px;
   margin-top: 0;
   text-align: center;

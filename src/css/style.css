@@ -728,6 +728,24 @@ header span {
 /* main menu
 ---------------------------------------------*/
 
+.big-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.quiz-time {
+  margin-top: 0;
+}
+
+.big-buttons button span {
+  display: block;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 0.75em;
+}
+
+
 [role="toolbar"] ul {
   margin: 0;
 }

@@ -1410,45 +1410,33 @@ footer #feedback {
   body > * {
     display: none;
   }
-  #stats {
+  #stats,
+  .privacy {
     display: block;
+    padding: 0;
   }
   #remember {
     display: block;
+    padding: 0;
+    page-break-before: auto;
   }
+  #main-menu,
+  #about-pip,
+  #about-esa,
+  #start,
+  #resume,
+  #categories,
+  #break-time,
+  #are-you-sure,
+  #deleted,
+  .slide:target {
+    display: none;
+  }
+
   [aria-label$="menu"] {
     display: none;
   }
   .no-print {
     display: none !important;
-  }
-  .q-and-a {
-    padding: 1em;
-    border: 2px solid;
-    color: #000;
-  }
-  .q-and-a li {
-    padding: 0;
-    background: none;
-    margin: 0;
-    page-break-before: auto;
-  }
-  .q-and-a li + li {
-    margin-top: 1.5em;
-    border-top: 1px solid;
-    padding-top: 1.5em;
-  }
-  .slide {
-    padding: 0;
-  }
-  .label-input {
-    width: 100%;
-  }
-  .label-input input {
-    border: 0;
-    padding: 0;
-    font-style: italic;
-    border-bottom: 1px dashed;
-    width: 50%;
   }
 }

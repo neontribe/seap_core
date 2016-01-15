@@ -1410,16 +1410,19 @@ footer #feedback {
   body > * {
     display: none;
   }
+
   #stats,
   .privacy {
     display: block;
     padding: 0;
   }
+
   #remember {
     display: block;
     padding: 0;
     page-break-before: auto;
   }
+
   #main-menu,
   #about-pip,
   #about-esa,
@@ -1436,6 +1439,7 @@ footer #feedback {
   [aria-label$="menu"] {
     display: none;
   }
+  
   .no-print {
     display: none !important;
   }

@@ -12,15 +12,12 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 #checkout gh_pages branch and update with contents 
 git remote rm origin
 git remote add origin https://$GIT_USER:$GIT_PASS@github.com/neontribe/seap_core.git
-git fetch
-cp -r src ../
+git fetch 
 git checkout gh-pages
-cp -r ../src/* .
-rm -r ../src
+cp -r capp_portal/* .
+rm -r capp_portal
 rm -r node_modules
 rm .gitignore
-rm -r js
-rm -r helpers
 git add .
 git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to Github Pages"
 git pull origin gh-pages

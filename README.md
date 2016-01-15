@@ -6,6 +6,10 @@
   * c-app.org.uk is built from: `index.html`, `privacy.html`, `css` dir and `images` dir.
   * esa-assessment.support and pip-assessment.support utilise `css`, `helpers`, `images`, and `js` dir in their builds. Please see Readme at `neontribe/seap-esa` and `neontribe/SEAP-PIP` for further information.
 
+## Adding secure env vars to deploy.sh
+
+* `deploy.sh` contains some encrypted vars used in deployment. To replace them, first delete the existing ones. To add new ones into `.travis.yml` use travis encrypt on command line. (e.g. `travis encrypt GIT_USER=mickeymouse --add`)
+
 ## Deploy procedure for c-app.org.uk portal site
 
 __Staging__

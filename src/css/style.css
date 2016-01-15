@@ -732,10 +732,7 @@ header span {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-}
-
-.quiz-time {
-  margin-top: 0;
+  justify-content: space-between;
 }
 
 .big-buttons button span {
@@ -744,6 +741,29 @@ header span {
   font-style: italic;
   font-size: 0.75em;
 }
+
+.learn-about {
+  border: 5px solid #3389c1;
+  border-radius: 0.1875em;
+  margin-right: 10px;
+  text-align: center;
+  width: 50%;
+}
+
+.learn-about li {
+  margin: 10px;
+  text-align: left;
+}
+
+.quiz-time {
+  border: 5px solid #3389c1;
+  border-radius: 0.1875em;
+  margin-left: 10px;
+  margin-top: 0;
+  text-align: center;
+  width: 50%;
+}
+
 
 
 [role="toolbar"] ul {

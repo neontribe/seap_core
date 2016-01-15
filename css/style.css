@@ -1410,18 +1410,40 @@ footer #feedback {
   body > * {
     display: none;
   }
-  #stats {
+
+  #stats,
+  .privacy {
     display: block;
+    padding: 0;
   }
+
   #remember {
     display: block;
+    padding: 0;
+    page-break-before: auto;
   }
+
+  #main-menu,
+  #about-pip,
+  #about-esa,
+  #start,
+  #resume,
+  #categories,
+  #break-time,
+  #are-you-sure,
+  #deleted,
+  .slide:target {
+    display: none;
+  }
+
   [aria-label$="menu"] {
     display: none;
   }
+
   .no-print {
     display: none !important;
   }
+
   .q-and-a {
     padding: 1em;
     border: 2px solid;

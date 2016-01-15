@@ -1,5 +1,11 @@
 # SEAP Core files for ESA, PIP and C-App 
 
+## Grunt and npm
+
+* npm install
+* grunt generate validates html and creates capp_portal dir containing c-app.org.uk site elements
+* grunt test runs basic tests on capp_portal
+
 ## What everything is
 
 * The files used in deployment are in `src`.
@@ -8,7 +14,7 @@
 
 ## Adding secure env vars to deploy.sh
 
-* `deploy.sh` contains some encrypted vars used in deployment. To replace them, first delete the existing ones. To add new ones into `.travis.yml` use travis encrypt on command line. (e.g. `travis encrypt GIT_USER=mickeymouse --add`)
+* `deploy.sh` makes use of some encrypted vars used in deployment. To replace them, first delete the existing ones. To add new ones into `.travis.yml` use travis encrypt on command line. (e.g. `travis encrypt GIT_USER=mickeymouse --add`)
 
 ## Deploy procedure for c-app.org.uk portal site
 

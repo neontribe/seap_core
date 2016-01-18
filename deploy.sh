@@ -12,7 +12,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 #checkout gh_pages branch and update with contents 
 git remote rm origin
 git remote add origin https://$GIT_USER:$GIT_PASS@github.com/neontribe/seap_core.git
-git fetch 
+git fetch
 git checkout gh-pages
 cp -r capp_portal/* .
 rm -r capp_portal
@@ -24,8 +24,6 @@ git pull origin gh-pages
 git push origin gh-pages
 fi
 
-#STOPPED HERE _ NEED TO IMPLEMENT RELEASE TO LIVE
-
 #if this is a tagged release, deploy to LIVE
 if [ "$TRAVIS_TAG" ]; then
     echo -e "Release tag:"
@@ -36,7 +34,7 @@ if [ "$TRAVIS_TAG" ]; then
     #remove robots.txt so dev nofollow is not copied up to live
     rm robots.txt
     cd ..
-    tar -czf release.tgz seap_esa
+    tar -czf release.tgz seap_core
 		sudo apt-get update
 		sudo apt-get -y install sshpass
 
@@ -46,7 +44,7 @@ if [ "$TRAVIS_TAG" ]; then
     echo -e "Deploying to Live."
 
     #ssh onto deployment server. unpack. tidy. fire live deploy script.
-    sshpass -p $DEPLOY_PASS ssh $DEPLOY_USER@$DEPLOY_HOST  "cd $DEPLOY_PATH && tar -xvf release.tgz && rm -rf seap_esa/.git && printf "$TRAVIS_TAG-$DATETIME" > seap_esa/release.txt && rm release.tgz && bash deploy-seap-esa.sh"
+    sshpass -p $DEPLOY_PASS ssh $DEPLOY_USER@$DEPLOY_HOST  "cd $DEPLOY_PATH && tar -xvf release.tgz && rm -rf seap_core/.git && printf "$TRAVIS_TAG-$DATETIME" > seap_core/release.txt && rm release.tgz && bash deploy-seap-capp.sh"
 
     #TODO need to add robots.txt for live in above script or in deploy-seap-esa.sn on deploy server
 

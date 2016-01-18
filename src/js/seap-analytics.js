@@ -59,7 +59,7 @@ $('body').on('click', 'button', function(e) {
       value = null;
       page = _.last(window.hashHistory) ? _.last(window.hashHistory) : 'unknown';
   $.when(page).then(
-    ga('send', 'event', page, 'button-link-click', linkText, null)
+    ga('send', 'event', page, 'button-click', linkText, null)
   );
 });
 

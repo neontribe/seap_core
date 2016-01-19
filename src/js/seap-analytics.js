@@ -106,8 +106,8 @@ $('#seen-all-even-skipped').on('click', '[data-action="stats"]', function(e) {
 
 
 // Waypoint
-var $looksAt = $('#looks-at');
-$looksAt.waypoint(function (direction) {
+var $waypointTrigger = $('.waypoint-trigger');
+$waypointTrigger.waypoint(function (direction) {
   if (direction === 'down') {
   ga('send', 'event', '#about-' + site, 'reached-waypoint', 'what the assessor looks at', null);
   }

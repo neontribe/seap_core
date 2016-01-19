@@ -107,6 +107,6 @@ $('#seen-all-even-skipped').on('click', '[data-action="stats"]', function(e) {
 var $waypointTrigger = $('.waypoint-trigger');
 $waypointTrigger.waypoint(function (direction) {
   if (direction === 'down') {
-    ga('send', 'event', '#about-' + site, 'reached-waypoint', 'what the assessor looks at', null);
+    ga('send', 'event', '#about-' + site, 'reached-waypoint', 'scroll half way down info page', null);
   }
 });

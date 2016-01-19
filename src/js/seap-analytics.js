@@ -102,3 +102,14 @@ $('#seen-all').on('click', '[data-action="stats"]', function(e) {
 $('#seen-all-even-skipped').on('click', '[data-action="stats"]', function(e) {
   ga('send', 'event', '#seen-all-even-skipped', 'more-prepared:stats-button-click', 'percent answered', 100);
 });
+
+
+
+// Waypoint
+var $looksAt = $('#looks-at');
+$looksAt.waypoint(function (direction) {
+  if (direction === 'down') {
+  ga('send', 'event', '#about-' + site, 'reached-waypoint', 'what the assessor looks at', null);
+  }
+});
+//End Waypoint

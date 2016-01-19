@@ -104,6 +104,7 @@ $('#seen-all-even-skipped').on('click', '[data-action="stats"]', function(e) {
 });
 
 // Waypoint - Event on reaching half way down the about page
+// Todo get id# for code reuse on other waypoints
 var $waypointTrigger = $('.waypoint-trigger');
 $waypointTrigger.waypoint(function (direction) {
   if (direction === 'down') {

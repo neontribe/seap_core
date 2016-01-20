@@ -948,6 +948,10 @@ header span {
   margin-top: 0;
 }
 
+#printing-box {
+  margin-bottom: 1.5em;
+}
+
 #printing-box button {
   width: 100%;
   margin: 0.8em 0;

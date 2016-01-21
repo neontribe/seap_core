@@ -997,9 +997,21 @@ details {
   height: 100%;
 }
 
-a#video-unsigned {
+.button-box fieldset {
+text-align: center;
+}
+
+.button-box input {
+  visibility: hidden;
+  position: absolute;
+  left: -40px;
+}
+
+label#video-unsigned {
   display:none;
 }
+
+
 
 
 /* expandies

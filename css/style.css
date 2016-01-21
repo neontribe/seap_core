@@ -666,8 +666,8 @@ nav li + li::before {
 }
 
 #data-box {
-  margin: 0;
-}
+  margin: 1.5em 0;
+ }
 
 #categories-content {
   margin: 0 10% 1em 10%;
@@ -997,22 +997,9 @@ details {
   height: 100%;
 }
 
-.button-box fieldset {
+.button-box {
 text-align: center;
 }
-
-.button-box input {
-  visibility: hidden;
-  position: absolute;
-  left: -40px;
-}
-
-label#video-unsigned {
-  display:none;
-}
-
-
-
 
 /* expandies
 ---------------------------------------------*/

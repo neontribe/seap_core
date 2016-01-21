@@ -997,22 +997,9 @@ details {
   height: 100%;
 }
 
-.button-box fieldset {
+.button-box {
 text-align: center;
 }
-
-.button-box input {
-  visibility: hidden;
-  position: absolute;
-  left: -40px;
-}
-
-label#video-unsigned {
-  display:none;
-}
-
-
-
 
 /* expandies
 ---------------------------------------------*/

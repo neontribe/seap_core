@@ -999,6 +999,7 @@ details {
 
 .button-box {
 text-align: center;
+font-size: 1.25em;
 }
 
 /* expandies
@@ -1333,6 +1334,12 @@ footer #feedback {
   .button-shaped,
   [type="radio"] + span {
     font-size: 0.9em;
+  }
+
+  #video-signed,
+  #video-transcript {
+    display: block;
+    font-size: 1.25em;
   }
 
   footer p {

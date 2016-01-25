@@ -267,6 +267,7 @@ a:visited {
 
 a:hover {
   border-bottom-width: 2px;
+  cursor: pointer;
 }
 
 a:focus {

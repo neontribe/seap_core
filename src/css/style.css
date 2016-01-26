@@ -268,6 +268,7 @@ a:visited {
 a:hover {
   border-bottom-width: 2px;
   cursor: pointer;
+  cursor: hand;
 }
 
 a:focus {

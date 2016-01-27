@@ -564,6 +564,16 @@ noscript {
   position: absolute;
 }
 
+.staging-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px !important;
+  opacity: .5;
+  /*display: none;*/
+  padding: 0 !important;
+}
+
 .slide {
   display: table-cell;
   width: 100%;
@@ -1364,6 +1374,10 @@ footer #feedback {
 
   header img {
     display: none;
+  }
+
+  .staging-banner header img {
+    display: block !important;
   }
 
   .c-app header img {

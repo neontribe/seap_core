@@ -571,7 +571,7 @@ noscript {
   height: 400px !important;
   width: 400px;
   opacity: .5;
-  /*display: none;*/
+  display: none;
   padding: 0 !important;
   background: red;
   transform: rotate(-45deg);

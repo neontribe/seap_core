@@ -566,13 +566,27 @@ noscript {
 
 .staging-banner {
   position: fixed;
-  top: 0;
-  left: 0;
-  height: 100px !important;
+  top: -225px;
+  left: -200px;
+  height: 400px !important;
+  width: 400px;
   opacity: .5;
   /*display: none;*/
   padding: 0 !important;
+  background: red;
+  transform: rotate(-45deg);
 }
+
+.staging-banner p {
+ position: absolute;
+ bottom: 0;
+ left: 15%;
+ color: white;
+ line-height: 1.2em;
+ margin-bottom: 10px;
+ text-align: center;
+}
+
 
 .slide {
   display: table-cell;
@@ -1374,10 +1388,6 @@ footer #feedback {
 
   header img {
     display: none;
-  }
-
-  .staging-banner header img {
-    display: block !important;
   }
 
   .c-app header img {

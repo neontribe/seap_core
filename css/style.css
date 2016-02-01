@@ -754,10 +754,14 @@ header span {
 }
 
 .flex-center {
-
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 /* main menu
 ---------------------------------------------*/

@@ -84,7 +84,7 @@ p + p {
   margin: 0;
 }
 
-#stats * + h3 {
+#your-assessment * + h3 {
   margin-top: 30px;
   margin-top: 1.5rem;
 }
@@ -1085,14 +1085,6 @@ h2 [aria-expanded="false"]::before {
 h2 [aria-expanded="true"]::before {
   content: '-\0020';
 }
-
-/* guide
----------------------------------------------*/
-.guide h2 {
-  margin-top: 1em;
-  font-size: 2em;
-}
-
 /* footer
 ---------------------------------------------*/
 
@@ -1565,8 +1557,7 @@ footer #feedback {
     display: none;
   }
 
-  #stats,
-  .privacy {
+  #your-assessment {
     display: block;
     padding: 0;
   }

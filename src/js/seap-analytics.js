@@ -97,7 +97,7 @@ $('#seen-all').on('click', '[data-action="your-assessment"]', function(e) {
   ga('send', 'event', '#seen-all', 'more-prepared:assessment-button-click', 'percent answered', perAns);
 });
 
-// More Prepared - Event on any button click on your assessment button
+// More Prepared - Event on click on your assessment button from seen-all-even-skipped
 $('#seen-all-even-skipped').on('click', '[data-action="your-assessment"]', function(e) {
   ga('send', 'event', '#seen-all-even-skipped', 'more-prepared:assessment-button-click', 'percent answered', 100);
 });

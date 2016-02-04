@@ -1228,7 +1228,7 @@ footer #feedback {
   padding: 0.75em;
   max-width: 700px;
   margin: 0.5em auto;
-  text-align: justify;
+  text-align: center;
   animation: prompt 0.75s linear 1;
   border: 1px solid;
 }

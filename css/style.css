@@ -969,16 +969,6 @@ header span {
   height: 0;
 }
 
-.print-box button {
-  margin: 0;
-  margin-left: 0.5em;
-  float: right;
-}
-
-.print-box p:first-of-type {
-  margin: 0;
-}
-
 .print-box .button-shaped {
   width: 96%;
 }
@@ -993,19 +983,40 @@ header span {
   margin-top: 0;
 }
 
-#printing-box button {
-  width: 100%;
-  margin: 0.8em 0;
+#printing-box h2,
+#data-box h2,
+#assessment-checklist h2 {
+  font-weight: 300;
+  margin: 0;
+}
+
+#assessment-checklist .no-print h2 {
+  font-size: 2em;
+  text-align: left;
+}
+
+
+/* assessment checklist
+---------------------------------------------*/
+
+#assessment-checklist #paper [aria-label$="menu"] {
+  display: none;
+}
+
+#assessment-checklist .paper {
+  background: #dcf0fd;
+}
+
+#assessment-checklist .message {
+  display: none;
+}
+
+#remember {
+  margin-top: 1em;
 }
 
 /* about-esa about-pip
 ---------------------------------------------*/
-
-/* Video transcription expandie */
-#about-esa .print-box button,
-#about-pip .print-box button {
-  margin: 0 0.5em 0.4em 0;
-}
 
 #video-transcription p {
   clear: both;
@@ -1575,12 +1586,6 @@ footer #feedback {
     padding: 0;
   }
 
-  #remember {
-    display: block;
-    padding: 0;
-    page-break-before: auto;
-  }
-
   #main-menu,
   #about-pip,
   #about-esa,
@@ -1590,8 +1595,15 @@ footer #feedback {
   #break-time,
   #are-you-sure,
   #deleted,
+  #assessment-checklist,
   .slide:target {
     display: none;
+  }
+
+  #assessment-checklist {
+    display: block;
+    padding: 0;
+    page-break-before: auto;
   }
 
   [aria-label$="menu"] {
@@ -1600,6 +1612,11 @@ footer #feedback {
 
   .no-print {
     display: none !important;
+  }
+
+  #remember h2 {
+    font-weight: 300;
+    text-align: left;
   }
 
   .q-and-a {

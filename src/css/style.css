@@ -1533,7 +1533,7 @@ footer #feedback {
     padding: 0.5em;
   }
 
-  .big-buttons
+  .big-buttons,
   .flex-center {
     display:block;
   }

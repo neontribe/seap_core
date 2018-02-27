@@ -1306,6 +1306,7 @@ footer #feedback {
   width: 46%;
   margin-bottom: 1em;
 }
+
 .c-app .esa-section {
   float: left;
 }
@@ -1330,7 +1331,7 @@ footer #feedback {
 }
 
 .c-app .outro {
-  clear:both;
+  clear: both;
 }
 
 /* PROFILE BUTTONS ------------------------------------------------- */
@@ -1542,11 +1543,11 @@ footer #feedback {
 
   .big-buttons,
   .flex-center {
-    display:block;
+    display: block;
   }
 
   .to-main-menu {
-    float:none;
+    float: none;
   }
 
   header .logo {

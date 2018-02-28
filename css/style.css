@@ -1159,7 +1159,7 @@ footer a {
 }
 
 footer {
-  padding: 0 1.5em 0em 1.5em;
+  padding: 0 1.5em;
   margin: auto;
   display: flex;
 }
@@ -1209,17 +1209,6 @@ footer #privacy {
 .push {
   margin-left: auto;
   margin-right: 2em;
-}
-
-.sponsor-images {
-  margin-bottom: 1rem;
-  text-align: right;
-  padding: 0;
-}
-
-.sponsor-text {
-  line-height: 1rem;
-  text-align: right;
 }
 
 footer #feedback {
@@ -1663,11 +1652,6 @@ footer #feedback {
     text-align: left;
   }
   
-  .privacy-link {
-    align-self: flex-end;
-    text-align: left;
-  }
-  
   footer {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1707,10 +1691,6 @@ footer #feedback {
   
   .sponsor-text {
     text-align: right;
-  }
-  
-  .social-profile-buttons {
-    margin: 2em 0 0 1.5em;
   }
     
   .social-profile-buttons {

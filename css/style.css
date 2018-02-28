@@ -1155,6 +1155,7 @@ footer a {
 .footer-container:nth-child(1) {
   line-height: 1em;
   margin-bottom: 1em;
+  max-width: 40%;
 }
 
 footer {
@@ -1223,7 +1224,7 @@ footer #privacy {
 
 footer #feedback {
   margin-left: 1em;
-  width: 100%;
+  display: inline-block;
 }
 
 /*footer sprites*/
@@ -1678,6 +1679,7 @@ footer #feedback {
     margin: 0;
     order: 3;
     flex-basis: 100%;
+    max-width: 100%;
   }
   
   /* Award winner block */

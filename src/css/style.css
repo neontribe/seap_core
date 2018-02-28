@@ -1225,6 +1225,7 @@ footer #privacy {
 footer #feedback {
   margin-left: 1em;
   display: inline-block;
+  width: 100%;
 }
 
 /*footer sprites*/

@@ -1135,11 +1135,8 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  line-height: 3em;
-}
-
-.c-app footer {
   line-height: inherit;
+  display: flex;
 }
 
 footer p {
@@ -1149,6 +1146,21 @@ footer p {
 
 footer a {
   border: 0;
+}
+
+.footer-container {
+  align-self: flex-end;
+}
+
+.footer-container:nth-child(1) {
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+
+footer {
+  padding: 0 1.5em 0em 1.5em;
+  margin: auto;
+  display: flex;
 }
 
 footer .privacy .larger {
@@ -1175,8 +1187,43 @@ footer #privacy {
   margin: 0 1em 0 1em;
 }
 
+.sponsor-images {
+  margin-bottom: 1rem;
+  text-align: right;
+  padding: 0;
+}
+
+.sponsor-text {
+  line-height: 1rem;
+  text-align: right;
+}
+
+.winner {
+  display: block;
+  height: 4em;
+  width: auto;
+  margin: 0 0 1.5em 0;
+}
+
+.push {
+  margin-left: auto;
+  margin-right: 2em;
+}
+
+.sponsor-images {
+  margin-bottom: 1rem;
+  text-align: right;
+  padding: 0;
+}
+
+.sponsor-text {
+  line-height: 1rem;
+  text-align: right;
+}
+
 footer #feedback {
   margin-left: 1em;
+  width: 100%;
 }
 
 /*footer sprites*/
@@ -1327,19 +1374,15 @@ footer #feedback {
   padding: 0 1.5em 0em 1.5em;
   margin: auto;
   display: flex;
+  justify-content: space-between;
 }
 
-.c-app .footer-container {
-  align-self: flex-end;
-  flex-basis: 33%;
+.c-app .winner {
+  display: block;
+  height: 4em;
+  width: auto;
+  margin: 0 120px 1.3em 0;
 }
-
-.c-app .footer-container:nth-child(1) {
-  color: red;
-  line-height: 1em;
-  margin-bottom: 1em;
-}
-
 
 .c-app footer .privacy-link {
   -webkit-box-pack: end;
@@ -1347,24 +1390,6 @@ footer #feedback {
   -ms-flex-pack: end;
   justify-content: flex-end;
   display: inline-block;
-}
-
-.c-app .sponsor-images {
-  margin-bottom: 1rem;
-  text-align: right;
-  padding: 0;
-}
-
-.c-app .sponsor-text {
-  line-height: 1rem;
-  text-align: right;
-}
-
-.winner {
-  display: block;
-  height: 4em;
-  width: auto;
-  margin: 0 auto 1.5em auto;
 }
 
 .c-app .outro {
@@ -1611,6 +1636,7 @@ footer #feedback {
   .box {
     margin: 0;
   }
+  
   #activities.slide {
     padding: 120px 0px;
     padding: 6rem 0rem;
@@ -1630,12 +1656,17 @@ footer #feedback {
     padding-bottom: 14rem;
   }
 
-  .c-app .privacy-link {
+  .privacy-link {
     align-self: flex-end;
     text-align: left;
   }
   
-  .c-app footer {
+  .privacy-link {
+    align-self: flex-end;
+    text-align: left;
+  }
+  
+  footer {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0;
@@ -1643,35 +1674,35 @@ footer #feedback {
   }
   
   /* Social block */
-  .c-app .footer-container:nth-child(1) {
+  .footer-container:nth-child(1) {
     margin: 0;
     order: 3;
     flex-basis: 100%;
   }
   
   /* Award winner block */
-  .c-app .footer-container:nth-child(2) {
+  .footer-container:nth-child(2) {
     margin: 0;
     flex-basis: 30%;
   }
   
-  .c-app .footer-container:nth-child(2) > img {
+  .footer-container:nth-child(2) > img {
     width: 100%;
     height: auto;
   }
   
   /* "Brought to you by" block */
-  .c-app .footer-container:nth-child(3) {
+  .footer-container:nth-child(3) {
     margin: 0;
     flex-basis: 70%;
   }
   
-  .c-app .sponsor-images {
+  .sponsor-images {
   margin-bottom: 1rem;
   text-align: right;
 }
   
-  .c-app .sponsor-text {
+  .sponsor-text {
     text-align: right;
   }
   
@@ -1679,7 +1710,7 @@ footer #feedback {
     margin: 2em 0 0 1.5em;
   }
     
-  .c-app .social-profile-buttons {
+  .social-profile-buttons {
     margin: 2em 0 0 0;
     width: 100%;
     margin: 0;
@@ -1689,6 +1720,7 @@ footer #feedback {
     height: 3rem;
     margin-top: 2rem;
     margin-left: 0;
+    margin-right: 0;
   }
 
   footer {
@@ -1699,11 +1731,19 @@ footer #feedback {
     font-size: 12px;
   }
   
+  footer #feedback {
+  margin: 0;
+  }
+  
+  footer #privacy {
+  margin: 0;
+  }
+  
   .c-app footer {
     height: 12em;
   }
 
-  .c-app footer p {
+  footer p {
     font-size: 16px;
   }
 }

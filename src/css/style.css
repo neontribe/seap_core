@@ -350,25 +350,6 @@ nav li {
   display: inline;
 }
 
-.button-link {
-  background: #6fe9bf;
-  border: 0;
-  border-radius: 0.1875em;
-  box-shadow: 0 0.125em #0a8f60;
-  display: inline-block;
-  font-size: 1.25em;
-  font-weight: bold;
-  line-height: 1.125;
-  margin: 0;
-  padding: 0.5em 0.75em;
-  width: 100%;
-}
-
-.button-link:hover {
-  background: #006541;
-  color: #6fe9bf;
-}
-
 /* answers
 ---------------------------------------------*/
 
@@ -1425,6 +1406,12 @@ footer #feedback {
 
 .c-app .outro {
   clear: both;
+}
+
+.c-app a.button-shaped {
+  font-size: 1.25em;
+  margin: 0;
+  width: 100%;
 }
 
 /* profile buttons

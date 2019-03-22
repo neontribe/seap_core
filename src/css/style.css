@@ -631,6 +631,21 @@ noscript {
   padding: 0.5rem 1rem;
 }
 
+.donation-banner a.button-shaped {
+  width: 10rem;
+  text-align: center;
+  margin: 0.5rem auto;
+  color: #003555;
+  background: #79bde9;
+  box-shadow: 0 0.125em #3389c1;
+  padding: 0;
+}
+
+.donation-banner a.button-shaped:hover {
+  background: #003555;
+  color: #79bde9;
+}
+
 .slide {
   display: table-cell;
   width: 100%;
@@ -1408,7 +1423,7 @@ footer #feedback {
   clear: both;
 }
 
-.c-app a.button-shaped {
+.c-app .button-shaped {
   font-size: 1.25em;
   margin: 0;
   width: 100%;

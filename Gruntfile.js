@@ -4,7 +4,7 @@ module.exports = function(grunt){
 
     grunt.initConfig({
       pkg: grunt.file.readJSON('package.json'),
-      htmlhint: {
+      htmlhintplus: {
         build: {
             options: {
                 'tag-pair': true,
@@ -44,6 +44,6 @@ module.exports = function(grunt){
       }
     });
 
-    grunt.registerTask('generate', ['copy', 'htmlhint', 'clean:tidyup']);
+    grunt.registerTask('generate', ['copy', 'htmlhintplus', 'clean:tidyup']);
     grunt.registerTask('test', ['generate', 'connect', 'casperjs']);
 };

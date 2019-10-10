@@ -12,6 +12,10 @@ module.exports = merge(webpackCommon, {
     plugins: [
         new HTMLWebpackPlugin({
             template: "./src/template.html"
+        }),
+        new HTMLWebpackPlugin({
+            filename: "privacy.html",
+            template: "./src/privacy.html"
         })
     ],
     module: {

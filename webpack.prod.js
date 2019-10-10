@@ -24,7 +24,17 @@ module.exports = merge(webpackCommon, {
                     collapseWhitespace: true,
                     removeComments: true
                 }
+            }),
+            new HTMLWebpackPlugin({
+                filename: "privacy.html",
+                template: "./src/privacy.html",
+                minify: {
+                    removeAttributeQuotes: true,
+                    collapseWhitespace: true,
+                    removeComments: true
+                }
             })
+
         ]
     },
     plugins: [

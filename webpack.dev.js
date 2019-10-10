@@ -5,7 +5,7 @@ const merge = require('webpack-merge');
 module.exports = merge(webpackCommon, {
     mode: "development",
     output: {
-        filename: "main.js",
+        filename: "[name].bundle.js",
         path: path.resolve(__dirname, "capp_portal")
     }
 });

@@ -16,6 +16,20 @@ module.exports = {
                     "style-loader", //2. Inject styles into DOM
                     "css-loader" //1. Turns css into common js
                 ]
+            },
+            {
+                test: /\.html$/,
+                use: ["html-loader"]
+            },
+            {
+                test: /\.(svg|png|jpg|ico)$/,
+                use: {
+                    loader: "file-loader",
+                    options: {
+                        name: "[name].[hash].[ext]",
+                        outputPath: "images"
+                    }
+                }
             }
         ]
     }

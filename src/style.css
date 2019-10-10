@@ -1258,7 +1258,7 @@ footer #feedback {
 }
 
 .sprite {
-  background-image: url(../images/spritesheet.png);
+  background-image: url(./images/spritesheet.png);
   background-repeat: no-repeat;
   display: inline-block;
   margin-left: 0.5em;
@@ -1289,7 +1289,7 @@ footer #feedback {
 /* slide icons sprites */
 
 .sprite-icons {
-    background-image: url(../images/spritesheet-icons.png);
+    background-image: url(./images/spritesheet-icons.png);
     background-repeat: no-repeat;
     display: block;
     margin: 0 auto;
@@ -1457,19 +1457,19 @@ footer #feedback {
 }
 
 .social-profile-buttons a.facebook {
-  background: url('../images/neontabs_social_sprite-32x32.png') #4d7dc1 2px center no-repeat;
+  background: url('./images/neontabs_social_sprite-32x32.png') #4d7dc1 2px center no-repeat;
   background-position: 0 -32px;
   border-color: #294c89;
 }
 
 .social-profile-buttons a.linkedin {
-  background: url('../images/neontabs_social_sprite-32x32.png') #0177b5 2px center no-repeat;
+  background: url('./images/neontabs_social_sprite-32x32.png') #0177b5 2px center no-repeat;
   background-position: 0 -128px;
   border-color: #0075b6;
 }
 
 .social-profile-buttons a.twitter {
-  background: url('../images/neontabs_social_sprite-32x32.png') #4099FF 2px center no-repeat;
+  background: url('./images/neontabs_social_sprite-32x32.png') #4099FF 2px center no-repeat;
   background-position: 0 -226px;
   border-color: #204c7f;
 }

@@ -1,16 +1,25 @@
-const path = require("path");
+const path = require('path');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: "development",
     entry: "./src/index.js",
     output: {
-        filename: "main.js",
+        filename: "main.[contentHash].js",
         path: path.resolve(__dirname, "capp_portal")
     },
+    plugins: [
+        new HTMLWebpackPlugin({
+            template: "./src/template.html"
+        })
+    ],
     module: {
         rules: [
             {
-                test: /\.css$/,
-                use: ["style-loader", "css-loader"]
+                test: /\.css$/i,
+                use: [
+                    "style-loader", //2. Inject styles into DOM
+                    "css-loader" //1. Turns css into common js
+                ]
             }
         ]
     }

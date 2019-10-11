@@ -4,6 +4,8 @@ node_js:
 sudo: required
 before_install:
 - npm install -g casperjs
+before_script:
+- npm start
 after_success:
 - bash deploy.sh
 env:

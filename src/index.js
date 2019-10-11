@@ -1,2 +1,2 @@
 import "./style.css";
-console.log("hello from Webpack!");
+//Webpack requires a JS file as an entry point

@@ -1351,6 +1351,10 @@ footer #feedback {
 /* portal
 ---------------------------------------------*/
 
+.c-app h1 {
+  font-size: 2.8em;
+}
+
 .c-app .wrapper {
   max-width: 850px;
   margin: 0 auto;
@@ -1369,10 +1373,6 @@ footer #feedback {
   font-weight: normal;
   font-style: italic;
   font-size: 0.75em;
-}
-
-.c-app .donation-banner {
-  margin-top: 5rem;
 }
 
 .c-app .esa-section,

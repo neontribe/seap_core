@@ -4,8 +4,8 @@ node_js:
 sudo: required
 before_install:
 - npm install -g casperjs
+before_script: npm start
 script:
-- npm start &
 - npm test
 - kill $(jobs -p) || true
 after_success:

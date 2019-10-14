@@ -1359,6 +1359,7 @@ footer #feedback {
   max-width: 850px;
   margin: 0 auto;
   padding: 0 1.5em 10em 1.5em;
+  margin-top: 4.3em;
 }
 
 .c-app .wrapper button {
@@ -1372,10 +1373,6 @@ footer #feedback {
   font-weight: normal;
   font-style: italic;
   font-size: 0.75em;
-}
-
-.c-app .donation-banner {
-  margin-top: 5rem;
 }
 
 .c-app .esa-section,

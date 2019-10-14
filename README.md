@@ -1,10 +1,11 @@
-# SEAP Core files for ESA, PIP and C-App 
+# SEAP Core files for ESA, PIP and C-App
 
-## Grunt and npm
+## Webpack and npm
 
-* npm install
-* grunt generate validates html and creates capp_portal dir containing c-app.org.uk site elements
-* grunt test runs basic tests on capp_portal
+* `npm install`
+* `npm start` spins up a dev server to track any changes live
+* `npm run build` creates a production dir called `capp_portal` containing c-app.org.uk site elements, minified
+* `npm test` runs basic tests on capp_portal
 
 ## What everything is
 

@@ -5,7 +5,7 @@ sudo: required
 before_install:
 - npm install -g casperjs
 script:
-- npm run start:ci
+- npm start
 - npm test
 - kill $(jobs -p) || true
 after_success:

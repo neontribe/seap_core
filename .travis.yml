@@ -9,8 +9,10 @@ before_script:
 script:
 - npm test
 # after all tests finish running we need
-# to kill all background jobs 
+# to kill all background jobs
 - kill $(jobs -p) || true
+after_script:
+- npm run build
 after_success:
 - bash deploy.sh
 env:
